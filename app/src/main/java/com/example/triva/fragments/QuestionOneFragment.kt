@@ -21,9 +21,6 @@ class QuestionOneFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<Button>(R.id.button_second).setOnClickListener {
             findNavController().navigate(R.id.action_questionOneFragment_to_questionTwoFragment)
-        }
     }
 }
