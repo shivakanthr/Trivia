@@ -13,7 +13,7 @@
             android:id="@+id/action_splashFragment_to_nameFragment"
             app:destination="@id/nameFragment"
             app:launchSingleTop="true"
-            app:popUpTo="@id/nameFragment"
+            app:popUpTo="@id/splashFragment"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
@@ -59,6 +59,8 @@
             app:destination="@id/historyFragment" />
         <action
             android:id="@+id/action_summaryFragment_to_nameFragment"
-            app:destination="@id/nameFragment" />
+            app:destination="@id/nameFragment"
+            app:popUpTo="@id/nameFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>

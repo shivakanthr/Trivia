@@ -22,27 +22,54 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:text="@string/who_is_the_best_cricketer_in_the_world"
-            android:textSize="20dp" />
-
-        <ListView
-            android:id="@+id/question_list"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/question_one_label"
+            android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            tools:listitem="@layout/option_item" />
+            android:layout_marginRight="10dp">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/option_one"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/sachin_tendulkar"
+                android:checked="true"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/option_two"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/virat_kolli"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/option_three"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Adam Gilchirst"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/option_four"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Jacques Kallis" />
+        </RadioGroup>
     </RelativeLayout>
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/next"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:gravity="center"
-        android:text="@string/next"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/next"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textAllCaps="true"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
