@@ -3,9 +3,10 @@ package com.example.triva.dataBase
 import android.content.Context
 import androidx.room.*
 import com.example.triva.dataBase.dao.TestDao
+import com.example.triva.dataBase.data.GameData
 
 
-@Database(entities = [com.example.triva.dataBase.data.GameData::class], version = 1)
+@Database(entities = [GameData::class], version = 1)
 @TypeConverters(QuestionsConverter::class)
 abstract class TestRoomDb : RoomDatabase() {
 

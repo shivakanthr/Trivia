@@ -7,8 +7,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.triva.R
+import com.example.triva.dataBase.data.GameData
 
-class HistoryAdapter(private val mValues : List<com.example.triva.dataBase.data.GameData>) : RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
+class HistoryAdapter(private val mValues : List<GameData>) : RecyclerView.Adapter<HistoryAdapter.HistoryViewHolder>() {
 
     class HistoryViewHolder(view: View) : RecyclerView.ViewHolder(view){
         val tvName: TextView = view.findViewById(R.id.name)
